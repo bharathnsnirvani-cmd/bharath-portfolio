@@ -12,7 +12,7 @@ st.set_page_config(
 ROOT = Path(__file__).parent
 ASSETS = ROOT / "assets"
 PROFILE =ROOT / "profile.png"
-RESUME = ASSETS / "resume.pdf"
+RESUME = ASSETS / "resume.pdf.pdf"
 
 # ---------- Premium black & gold styling ----------
 st.markdown("""
