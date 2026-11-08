@@ -11,7 +11,7 @@ st.set_page_config(
 
 ROOT = Path(__file__).parent
 ASSETS = ROOT / "assets"
-PROFILE =ASSETS / "profile.png"
+PROFILE =ROOT / "profile.png"
 RESUME = ASSETS / "resume.pdf"
 
 # ---------- Premium black & gold styling ----------
@@ -167,7 +167,7 @@ if page == "Home":
         if PROFILE.exists():
             st.image(str(PROFILE), use_container_width=True)
         else:
-            st.info("Add your photo at profile.png")
+            st.error("Profile photo is not found!S") 
     st.write("")
     st.markdown("### A little about my journey")
     m1, m2, m3 = st.columns(3)
