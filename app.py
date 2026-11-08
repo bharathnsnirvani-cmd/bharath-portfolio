@@ -11,7 +11,7 @@ st.set_page_config(
 
 ROOT = Path(__file__).parent
 ASSETS = ROOT / "assets"
-PROFILE = ASSETS / "profile.png"
+PROFILE = "profile.png"
 RESUME = ASSETS / "resume.pdf"
 
 # ---------- Premium black & gold styling ----------
