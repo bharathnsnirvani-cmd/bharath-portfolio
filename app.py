@@ -104,7 +104,7 @@ with st.sidebar:
         label_visibility="collapsed",
     )
     st.markdown("---")
-    st.markdown("[GitHub ↗](https://github.com/bharathns17-ctrl)")
+    st.markdown("[GitHub ↗](https://github.com/bharathnsnirvani-cmd/bharath-portfolio.git)")
     st.markdown("[LinkedIn ↗](https://www.linkedin.com/in/bharath-n-s-36847a442/)")
     st.caption("Designed with Python + Streamlit")
 
