@@ -167,7 +167,7 @@ if page == "Home":
         if PROFILE.exists():
             st.image(str(PROFILE), use_container_width=True)
         else:
-            st.info("Add your photo at assets/profile.png")
+            st.info("profile.png")
     st.write("")
     st.markdown("### A little about my journey")
     m1, m2, m3 = st.columns(3)
