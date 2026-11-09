@@ -171,7 +171,7 @@ if page == "Home":
     st.write("")
     st.markdown("### A little about my journey")
     m1, m2, m3 = st.columns(3)
-    m1.metric("Featured projects", "04")
+    m1.metric("projects", "04")
     m2.metric("Core languages", "03")
     m3.metric("Focus", "AI + Software")
     st.caption("An evolving portfolio — projects and skills will be updated as I learn and build.")
@@ -213,7 +213,7 @@ elif page == "Skills":
     st.info("Skill labels describe areas explored; they are not proficiency ratings.")
 
 elif page == "Projects":
-    st.title("Featured Projects")
+    st.title("Projects")
     st.write("Selected work and project concepts from my learning journey.")
     rows = st.columns(2, gap="large")
     for i, project in enumerate(projects):
