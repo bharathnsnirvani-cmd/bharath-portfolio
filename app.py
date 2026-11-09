@@ -17,6 +17,66 @@ RESUME = ROOT / "resume.pdf.pdf"
 # ---------- Premium black & gold styling ----------
 st.markdown("""
 <style>
+/* Smooth entrance animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Floating profile photo */
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Apply entrance animation */
+h1, h2, h3 {
+    animation: fadeInUp 0.9s ease-out both;
+}
+
+/* Profile image animation */
+.stImage img {
+    animation: floating 4s ease-in-out infinite;
+    border-radius: 18px;
+}
+
+/* Button hover effect */
+.stButton button {
+    transition: all 0.3s ease;
+}
+
+.stButton button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.35);
+}
+
+/* Smooth card hover */
+[data-testid="stMetric"],
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 :root { --gold: #d6ad55; --gold-light: #f0d58e; --ink: #090909; }
